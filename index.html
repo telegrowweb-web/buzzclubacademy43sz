@@ -14,7 +14,7 @@
     }
     body {
       min-height: 100vh;
-      background: linear-gradient(145deg, #0c4a6e 0%, #0369a1 35%, #0e7490 65%, #164e63 100%);
+      background: linear-gradient(145deg, #0f172a 0%, #0e7490 40%, #0891b2 70%, #164e63 100%);
       color: #fff;
       text-align: center;
       display: flex;
@@ -30,23 +30,23 @@
       position: fixed;
       border-radius: 50%;
       filter: blur(90px);
-      opacity: 0.4;
+      opacity: 0.35;
       z-index: 0;
       pointer-events: none;
     }
     body::before {
-      width: 300px;
-      height: 300px;
+      width: 320px;
+      height: 320px;
       background: #22d3ee;
-      top: -70px;
-      left: -50px;
+      top: -80px;
+      left: -60px;
     }
     body::after {
-      width: 260px;
-      height: 260px;
-      background: #38bdf8;
-      bottom: 60px;
-      right: -50px;
+      width: 280px;
+      height: 280px;
+      background: #a78bfa;
+      bottom: 50px;
+      right: -60px;
     }
     main {
       flex: 1;
@@ -66,7 +66,7 @@
       letter-spacing: 1.5px;
       text-transform: uppercase;
       margin-bottom: 10px;
-      background: linear-gradient(90deg, #67e8f9, #38bdf8, #7dd3fc);
+      background: linear-gradient(90deg, #67e8f9, #a5b4fc, #c4b5fd);
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
@@ -92,24 +92,30 @@
       align-items: center;
       justify-content: center;
       margin: 6px auto 22px;
-      background: linear-gradient(145deg, #0284c7, #06b6d4, #22d3ee);
+      background: linear-gradient(145deg, #0e7490, #06b6d4, #22d3ee);
       box-shadow:
         0 0 0 4px rgba(255, 255, 255, 0.18),
-        0 0 45px rgba(6, 182, 212, 0.55),
+        0 0 45px rgba(6, 182, 212, 0.5),
         0 10px 30px rgba(0, 0, 0, 0.3);
       animation: pulse 2.8s ease-in-out infinite;
       overflow: hidden;
-      padding: 10px;
+      padding: 12px;
     }
-    .logo-wrap img {
-      max-width: 100%;
-      max-height: 100%;
-      object-fit: contain;
-      border-radius: 50%;
+    .logo-text {
+      font-size: 15px;
+      font-weight: 800;
+      line-height: 1.25;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      background: linear-gradient(90deg, #ffffff, #e0f2fe);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-align: center;
     }
     @keyframes pulse {
       0%, 100% { transform: scale(1); }
-      50% { transform: scale(1.045); box-shadow: 0 0 0 6px rgba(255,255,255,0.22), 0 0 55px rgba(34,211,238,0.55), 0 12px 35px rgba(0,0,0,0.35); }
+      50% { transform: scale(1.045); box-shadow: 0 0 0 6px rgba(255,255,255,0.22), 0 0 55px rgba(34,211,238,0.5), 0 12px 35px rgba(0,0,0,0.35); }
     }
     .subs {
       font-size: 17px;
@@ -125,7 +131,7 @@
     .view-btn {
       display: inline-block;
       padding: 15px 48px;
-      background: linear-gradient(90deg, #0284c7, #06b6d4, #22d3ee);
+      background: linear-gradient(90deg, #0e7490, #06b6d4, #22d3ee);
       background-size: 200% 100%;
       color: #fff;
       border: none;
@@ -166,7 +172,7 @@
       font-weight: 600;
     }
     .disclaimer {
-      background: rgba(12, 74, 110, 0.85);
+      background: rgba(15, 23, 42, 0.85);
       color: #a5f3fc;
       font-size: 11.5px;
       text-align: center;
@@ -185,7 +191,7 @@
       align-items: center;
       gap: 6px;
       padding: 10px 0 16px;
-      background: rgba(12, 74, 110, 0.85);
+      background: rgba(15, 23, 42, 0.85);
       width: 100%;
       position: relative;
       z-index: 1;
@@ -207,7 +213,7 @@
       <span id="countdown">5</span> SECONDS
     </div>
     <div class="logo-wrap">
-      <img src="https://speedcdn.io/assets/logos/nickky247.com.png" alt="Buzz Club Academy Logo" />
+      <div class="logo-text">BUZZ<br>ACADEMY</div>
     </div>
     <p class="subs">Thousands of users already joined</p>
     <p class="check-text">✅ Quick signup • Instant access</p>
